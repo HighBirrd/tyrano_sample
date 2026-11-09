@@ -1,46 +1,40 @@
 *start
 
-[title name="aiueo
+[title name="麻雀ゲーム"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
-
-メロスは激怒した。[l][r]
-
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
-
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+あなたは極道の代打ちである。[1][r]
+今宵はこれまでで最も厳しい戦いが待っている...[1][r]
+参加する覚悟はできたか？
+[link target=*tag_sanka] →ああもちろん [endlink][r]
+[link target=*tag_fusanka] →いいやまた今度 [endlink][r]
 [s]
 
-*tag_sleep
+
+*tag_sanka
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=haipai.png time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
-
-【 BAD END 】[l][cm]
-
-[jump target=*start]
-
-*tag_run
-
-[bg storage=run.jpg time=500]
+いきなりの好配牌！今夜はいける気がする[l][r]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+[bg storage=ri-chi1.png time=500][r]
+[bg storage=ri-chi2.png time=500][r]
+[bg storage=ri-chi3.png time=500][r]
+[bg storage=sentaku.png time=500][r]
+どういうことか？さあここで選択。[1][r]
+[link target=*tag_dame] →發を切って聴牌！ [endlink][r]
+[link target=*tag_ii] →現物二万を切って放縦回避 [endlink][r]
+
+
+*tag_fusanka
+[cm]
+
+分かった。また今度だ。
 
 [jump target=*start]
